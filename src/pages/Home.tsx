@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useAppDispatch, useAppSelector } from "../app/hooks";
+import { Card } from "../components/Card";
 import SearchBar from "../components/SearchBar/index";
+import { charactersSelector, fetchCharacters, statusSelector } from "../features/characterSlice";
 import * as Styled from "./style";
 
 export function Home() {
+  const data = useAppSelector(charactersSelector);
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCharacters());
+  }, [])
+
   return (
     <Styled.Container>
       <Styled.Title>Rick and Morty</Styled.Title>
@@ -16,7 +26,7 @@ export function Home() {
         onChange={() => null}
       />
       <Styled.List>
-        {/* {data.results.map((character: any) => (<Card key={character.id} character={character} />)} */}
+        {data.map((character) => (<Card key={character.id} character={character} />))}
       </Styled.List>
     </Styled.Container>
   );

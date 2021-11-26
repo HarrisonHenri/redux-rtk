@@ -39,16 +39,16 @@ const charactersSlice = createSlice({
       state.characters.push(action.payload);
     },
   },
-  // extraReducers: (builder) => {
-  //   builder
-  //     .addCase(fetchCharacters.pending, (state) => {
-  //       state.status = Status.pending;
-  //     })
-  //     .addCase(fetchCharacters.fulfilled, (state, action) => {
-  //       state.characters = action.payload.results;
-  //       state.status = Status.succeeded;
-  //     });
-  // },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchCharacters.pending, (state) => {
+        state.status = Status.pending;
+      })
+      .addCase(fetchCharacters.fulfilled, (state, action) => {
+        state.characters = action.payload.results;
+        state.status = Status.succeeded;
+      });
+  },
 });
 
 export const statusSelector = (state: RootState) => state.characterSlice.status;
