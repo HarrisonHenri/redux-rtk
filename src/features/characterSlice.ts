@@ -45,6 +45,7 @@ const charactersSlice = createSlice({
         state.status = Status.pending;
       })
       .addCase(fetchCharacters.fulfilled, (state, action) => {
+        console.log(1)
         state.characters = action.payload.results;
         state.status = Status.succeeded;
       });

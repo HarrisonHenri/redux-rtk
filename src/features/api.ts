@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { Characters } from "../types/charactersTypes";
 
 export const apiSlice = createApi({
   reducerPath: "api",
@@ -7,7 +8,7 @@ export const apiSlice = createApi({
   }),
   endpoints(builder) {
     return {
-      listCharacters: builder.query({
+      listCharacters: builder.query<Characters, number>({
         query: (page = 1) => `character?page=${page}`,
       }),
       episode: builder.query({

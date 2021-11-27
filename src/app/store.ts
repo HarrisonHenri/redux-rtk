@@ -3,17 +3,18 @@ import {
   configureStore,
   ThunkAction,
 } from "@reduxjs/toolkit";
+import { apiSlice } from "../features/api";
 // import { apiSlice } from "../features/api";
 import characterReducer from "../features/characterSlice";
 
 export const store = configureStore({
   reducer: {
     characterSlice: characterReducer,
-    // [apiSlice.reducerPath]: apiSlice.reducer,
+    [apiSlice.reducerPath]: apiSlice.reducer,
   },
-  // middleware: (getDefaultMiddleware) => {
-  //   return getDefaultMiddleware().concat(apiSlice.middleware);
-  // },
+  middleware: (getDefaultMiddleware) => {
+    return getDefaultMiddleware().concat(apiSlice.middleware);
+  },
 });
 
 export type AppDispatch = typeof store.dispatch;
