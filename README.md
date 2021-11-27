@@ -1,55 +1,56 @@
-<img src="https://storage.googleapis.com/golden-wind/experts-club/capa-github.svg" />
+# Redux RTK
 
-## Consumindo API's com RTK query hooks e typescript
-Olá especialistas, nesta aula aprenderemos como usar o redux tool kit (rtk)
-interagir com APIs, vamos criar um aplicativo onde usaremos
-listar personagens utilizando a api do Rick and Morty typescript para garantir a cobertura de tipos
-da nossa store, actions, e reduces, e hooks
-não só isso, também usaremos RTK query para criar hooks customizados e lidar com os nossos enpoints.
+## About this Project
 
+_"The objective of this project is to exercise some React and [Redux RTK](https://redux-toolkit.js.org/) concepts"._
 
-## Primeiros passos 🏁
+## Why?
 
-Clone o repositório.
+This project is part of my personal portfolio, so, I'll be happy if you could provide me any feedback about the project, code, structure or anything that you can report that could make me a better developer!
 
-```sh
-gh repo clone git@github.com:rocketseat-experts-club/redux-toolkit-2021-09-11.git redux-rtk
+Email-me: harrisonhenrisn@gmail.com
+
+Connect with me at [LinkedIn](https://linkedin.com/in/harrison-henri-dos-santos-nascimento).
+
+Also, you can use this Project as you wish, be for study, be for make improvements or earn money with it!
+
+It's free!
+
+## Install
+
+Clone the repo using
+
+```
+$ git clone https://github.com/HarrisonHenri/redux-rtk.git
 ```
 
-`cd` no diretório.
-
-```sh
-cd redux-rtk
+```
+$ cd redux-rtk
 ```
 
-Instale as dependências do projeto:
+Install all the required dependencies
 
-```sh
-yarn install
+```
+$ yarn
 ```
 
-Inicie o servidor de desenvolvimento:
+And finally
 
-```sh
-yarn start
 ```
-💡 **Dica profissional** a maioria dos aquivos aqui podem ser compilados utilizando tsc diretamente
-caso deseje ter um watch para compilar seu arquivo apenas mude o scrip `yarn dev` no `package.json`
-para apontar para o seu arquivo desejado.
+$ yarn start
+```
 
-## Ferramentas 🧰
-- [x] React
-- [x] Redux
-- [x] Redux-toolkit
-- [x] Typescript
-- [x] Styled components
+## Built With
 
-## Expert
+- [React](https://github.com/facebook/react) - Build the web app using JavaScript and React
+- [Redux RTK](https://redux-toolkit.js.org/) 
 
-| [<img src="https://avatars.githubusercontent.com/u/7741167?s=460&u=41e738d1178fcf31656665fe34c1c490d9c271cb&v=4" width="75px;"/>](https://github.com/vitormalencar) |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                          [Vitor Alencar](https://github.com/vitormalencar)                                                          |
+## Contributing
 
-## Licença
+You can send how many PR's do you want, I'll be glad to analyse and accept them! And if you have any question about the project...
 
-Projetado com ♥ por [vitormalencar](https://vitormalencar.com). Licenciado sob a [Licença MIT](licença).
+Email-me: harrisonhenrisn@gmail.com
+
+Connect with me at [LinkedIn](https://linkedin.com/in/harrison-henri-dos-santos-nascimento-a6ba33112).
+
+Thank you!
