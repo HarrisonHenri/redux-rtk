@@ -4,7 +4,6 @@ import {
   ThunkAction,
 } from "@reduxjs/toolkit";
 import { apiSlice } from "../features/api";
-// import { apiSlice } from "../features/api";
 import characterReducer from "../features/characterSlice";
 
 export const store = configureStore({
